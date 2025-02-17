@@ -209,6 +209,16 @@ export default [
     ],
   },
   {
+    text: "develop.mixins",
+    collapsed: true,
+    items: [
+      {
+        text: "develop.mixins.mixins",
+        link: "/develop/mixins/mixins"
+      }
+    ]
+  },
+  {
     text: "develop.dataGeneration",
     collapsed: true,
     items: [
