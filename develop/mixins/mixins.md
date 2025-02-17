@@ -20,4 +20,6 @@ Injecting can seem confusing at first, but in reality it is quite simple. There 
 - ```TAIL```, Injects after all the code. <br/>
 There are a few others, but generally all you need to know are these ones.
 ## Cancelling
-Using injecting and mixins allow you to cancel a method at a certain distance. For example, <br/> // The code will go here //
+Using injecting and mixins allow you to cancel a method at a certain distance. For example, <br/> 
+<<< @/reference/latest/src/main/java/com/example/docs/MixinExample/PlayerEntityMixin.java{14-17}
+This will cancel the damage taking, the result of cancelling does depend on the method you cancel. If you meant for the player to cancel taking damage, but instead cancel the damage taking preperation - the results may not be as expected.
