@@ -1,9 +1,14 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2821
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+---
+title: Mixins
+description: This page covers how to use Mixin classes to inject code.
+authors:
+  - pineapplejohn
+---
 
-\f0\fs24 \cf0 Hii\
-}
+## Mixin {#mixin}
+Mixin classes are used for a multitude of things. For example, creating custom events, 
+changing code, and much more. Mixin classes allow you to select a class and inject code into a method. <br/><br/>
+To declare a mixin class, add the annotation ```@Mixin([YourClassHere].class)``` <br/> Then, go to ```src/client/resources/[YourModIdHere].client.mixins.json``` and correct the *package* directory. <br/> Finally, within the mixins json file, add ```"mixins" : [(YourMixinClassNameHere)]```
+<br/>
+Now, **anything** in this class is injected into the selected one. <br/> <br/>
+Using the right annotations, mixins also allow you to access private (hidden) or protected variables.
