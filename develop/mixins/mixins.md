@@ -27,9 +27,20 @@ Injecting can seem confusing at first, but in reality it is quite simple. There 
 - ```TAIL```, Injects after all the code. <br/>
 There are a few others, but generally all you need to know are these ones. <br/>
 This is what the basic injection looks like:
+
 ```java
 @Inject(at = @At("HEAD"), method = "damage")
 public void onDamaged(ServerWorld world, DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
   // Your code here...
+}
+```
+## Result {#result}
+```java
+@Mixin(PlayerEntity.class)
+public abstract class PlayerEventsMixin {
+    @Inject(at = @At("HEAD"), method = "damage")
+    public void onDamaged(ServerWorld world, DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
+      // Your code here...
+    }
 }
 ```
