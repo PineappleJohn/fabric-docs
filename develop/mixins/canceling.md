@@ -38,4 +38,4 @@ public void cancelDamage(ServerWorld world, DamageSource source, float amount, C
   }
 }
 ```
-<h6> Keep in mind, this is example code, it most likely won't work without adjustments <h6/>
+<sup><sub>Keep in mind, this is example code, it most likely won't work without adjustments</sub></sup>
