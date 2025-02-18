@@ -30,8 +30,9 @@ Event<MyCustomCallback> EVENT = EventFactory.createArrayBacked(MyCustomCallback.
         (listeners) -> ([Any function parameters]]) -> {
             for (MyCustomCallback listener : listeners) {
                 [Your returned type] result = listener.interact([Any function parameters]]);
- 
-                if(result != ) {
+
+                // If your returning with ActionResult, which is likely if your using any attacking or breaking.
+                if (result != ActionResult.PASS) {
                     return result;
                 }
             }
