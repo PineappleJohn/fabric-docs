@@ -33,7 +33,9 @@ public void cancelDamage(ServerWorld world, DamageSource source, float amount, C
   boolean cancel = YourCustomEvent.EVENT.invoker().interact(world, source, (boolean) (Object) this);
 
   if (cancel)
+  {
     cir.cancel();
+  }
 }
 ```
 <h6> Keep in mind, this is example code, it most likely won't work without adjustments <h6/>
