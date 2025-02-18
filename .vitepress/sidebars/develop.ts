@@ -219,6 +219,10 @@ export default [
       {
         text: "develop.mixins.canceling",
         link: "/develop/mixins/canceling"
+      },
+      {
+        text: "develop.mixins.custom-event",
+        link: "/develop/mixins/custom-event"
       }
     ]
   },
