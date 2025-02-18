@@ -216,6 +216,10 @@ export default [
         text: "develop.mixins.mixins",
         link: "/develop/mixins/mixins"
       }
+      {
+        text: "develop.mixins.canceling",
+        link: "/develop/mixins/canceling"
+      }
     ]
   },
   {
