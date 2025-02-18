@@ -73,7 +73,7 @@
   "develop.sounds.using-sounds": "Playing Sounds",
   "develop.sounds.custom": "Creating Custom Sounds",
   "develop.sounds.dynamic-sounds": "Dynamic Sounds",
-  "develop.mixins": "Mixins & Injecting",
+  "develop.mixins": "Mixins",
   "develop.mixins.mixins" : "Basic Injecting",
   "develop.mixins.canceling" : "Advancing" 
 }
