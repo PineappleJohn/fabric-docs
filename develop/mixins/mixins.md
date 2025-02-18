@@ -1,5 +1,5 @@
 ---
-title: The basics.
+title: Mixin Basics
 description: This page covers how to use Mixin classes to inject code.
 authors:
   - pineapplejohn
