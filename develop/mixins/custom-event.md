@@ -22,7 +22,8 @@ public interface MyCustomCallback {
 ```
 ::: warning 
 Make sure that your callback interface is not in the same directory as your mixin class.
-::: <br/>
+::: 
+<br/>
 Next, create an event variable with your interface. <br/>
 ```java
 Event<MyCustomCallback> EVENT = EventFactory.createArrayBacked(MyCustomCallback.class,
