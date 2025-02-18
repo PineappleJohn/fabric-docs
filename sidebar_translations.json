@@ -74,5 +74,6 @@
   "develop.sounds.custom": "Creating Custom Sounds",
   "develop.sounds.dynamic-sounds": "Dynamic Sounds",
   "develop.mixin": "Mixins & Injecting",
-  "develop.mixin.mixin" : "Basic Injecting"
+  "develop.mixin.mixin" : "Basic Injecting",
+  "develop.mixin.canceling" : "Advancing" 
 }
