@@ -35,6 +35,7 @@ public void onDamaged(ServerWorld world, DamageSource source, float amount, Call
 }
 ```
 ## Result {#result}
+Mixin class:
 ```java
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEventsMixin {
@@ -42,5 +43,22 @@ public abstract class PlayerEventsMixin {
     public void onDamaged(ServerWorld world, DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
       // Your code here...
     }
+}
+```
+Json file:
+```json
+  {
+  "required": true,
+  "minVersion": "0.8",
+  "package": "[Your package directory]",
+  "compatibilityLevel": "JAVA_21",
+  "mixins" : [
+    "PlayerEventsMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
 ```
