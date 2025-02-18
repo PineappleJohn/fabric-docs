@@ -27,25 +27,25 @@ Make sure that your callback interface is not in the same directory as your mixi
 Next, create an event variable with your interface. <br/>
 ```java
 Event<MyCustomCallback> EVENT = EventFactory.createArrayBacked(MyCustomCallback.class,
-        (listeners) -> (<Any function parameters>) -> {
+        (listeners) -> ([Any function parameters]]) -> {
             for (MyCustomCallback listener : listeners) {
-                <Your returned type> result = listener.interact(<Any function parameters>);
+                [Your returned type] result = listener.interact([Any function parameters]]);
  
                 if(result != ) {
                     return result;
                 }
             }
  
-        return <Your returned type>;
+        return [Your returned type];
     });
  
-    <Your returned type> interact(<Any function parameters>);
+    [Your returned type] interact([Any function parameters]);
 ```
 <sup> You don't need to name it EVENT, it's just customary. </sup> <br/>
 Your mixin class might have a specific return type, sometimes it's primitive. If it is an ```ActionResult``` or a derivative of one, sometimes you might have return it with ```ActionResult.PASS```, this is recomended as it won't interfere with other mods or the games processing. Also, you may benifit from adding Javadoc comments. 
 ```
 /**
- * Callback for <YourCallback>
+ * Callback for [YourCallback]
  *
  * Upon return:
  * - SUCCESS cancels further processing and continues with normal behavior.
