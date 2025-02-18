@@ -50,7 +50,23 @@ Your mixin class might have a specific return type, sometimes it's primitive. If
 ```
 
 ## Modifing your mixin {#modifing-mixin-class}
-
+You may have seen this in [returning](../develop/mixins/canceling), this is where the mixin class invokes the interfaces listeners. In summary, the mixin class invokes the event. Here is what the code would generally look like,
+```java
+@Inject(at = @At("HEAD"), method = "<MyMethod>")
+public void cancelDamage(<MyArgs>, CallbackInfoReturnable cir) {
+  boolean cancel = MyCustomCallback.EVENT.invoker().interact(<MyArgs>);
+  if (cancel)
+  {
+    cir.cancel();
+  }
+}
+```
 
 ## Registering your event {#registering}
-After creating your custom callback, you will need to create a ```listener``` which will run whenever your event is called.
+After creating your custom callback, you will need to create a ```listener``` which will run whenever your event is called. Creating listeners is incredibly simple, just write this in your client initialization file:
+```java
+MyCustomCallback.EVENT.register((<MyArgs>) -> {
+  // Event code goes here...
+});
+```
+Now whenever your event happens in-game, your code will run. Check **Usages** for a more in-depth view.
