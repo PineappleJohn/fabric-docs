@@ -5,7 +5,7 @@ authors:
   - pineapplejohn
 ---
 
-::: warning You **must** already have a Mixin class prepared! If you don't, see [**Mixins**](../develop/mixins/mixins). 
+::: warning You **must** already have a Mixin class prepared! If you don't, see [**Mixins**](../develop/mixins/mixins). :::
 ## Disclaimer {#disclaimer}
 Creating custom events uses ```lambda``` (```(args)->{func}```), before writing any custom events, do some research into it. A few good sources to start are <br/>
 - [w3schools.com](https://www.w3schools.com/java/java_lambda.asp)
