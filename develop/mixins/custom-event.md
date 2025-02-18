@@ -8,6 +8,7 @@ authors:
 ::: warning 
 You **must** already have a Mixin class prepared! If you don't, see [**Mixins**](../develop/mixins/mixins). 
 :::
+
 ## Disclaimer {#disclaimer}
 Creating custom events uses ```lambda``` (```(args)->{func}```), before writing any custom events, do some research into it. A few good sources to start are <br>
 - [w3schools.com](https://www.w3schools.com/java/java_lambda.asp)
@@ -20,11 +21,11 @@ To create a custom event with callback, you need to use an ```interface```. So, 
 public interface MyCustomCallback {
 }
 ```
-<br>
+
 ::: warning 
 Make sure that your callback interface is not in the same directory as your mixin class.
 :::
-<br>
+
 Next, create an event variable with your interface. <br>
 ```java
 Event<MyCustomCallback> EVENT = EventFactory.createArrayBacked(MyCustomCallback.class,
