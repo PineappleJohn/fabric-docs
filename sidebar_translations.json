@@ -75,5 +75,6 @@
   "develop.sounds.dynamic-sounds": "Dynamic Sounds",
   "develop.mixins": "Mixins",
   "develop.mixins.mixins" : "Basic Injecting",
-  "develop.mixins.canceling" : "Advancing" 
+  "develop.mixins.canceling" : "Advancing",
+  "develop.mixins.custom-event" : "Creating custom events"
 }
